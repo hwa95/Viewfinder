@@ -1,0 +1,13 @@
+
+
+<h1>Viewfinder</h1>
+<ul>
+  <% @users.each do |user| %>
+    <li><%= user.username %> <%= user.password %></li>
+  <% end %>
+</ul>
+  <tr>
+    <td><%= link_to 'sign up',new_user_path %></td>
+
+
+  </tr>
