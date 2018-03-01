@@ -6,7 +6,7 @@ class CommentsControllerTest < ActionDispatch::IntegrationTest
   # end
   test "can save comment without title" do
     comment = Comment.new
-    assert comment.save, "Saved the comment without a commenter"
+    assert_not comment.save, "Saved the comment without a commenter"
   end
   
 end
