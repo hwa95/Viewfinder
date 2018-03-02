@@ -4,8 +4,16 @@ class CommentsControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end
+<<<<<<< HEAD
   test "should get comment home page" do
      get articles_path(@article)
      assert_response :success
    end 
+=======
+ test "should get comment home page" do
+    get articles_path(@article)
+    assert_response :success
+  end 
+  
+>>>>>>> da64c94c99b167cc83a84893927c2e270f0e5190
 end
