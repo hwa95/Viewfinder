@@ -12,6 +12,12 @@ module SessionsHelper
     cookies.permanent[:remember_token] = user.remember_token
   end
 
+  # 忘记持久会话
+  def forget(user)
+    user.forget
+    cookies.delete(:user_id)
+    cookies.delete(:remember_token)
+  end
 
   # 返回 cookie 中记忆令牌对应的用户
   def current_user
@@ -25,7 +31,7 @@ module SessionsHelper
       end
     end
   end
-  
+
   # 返回当前登录的用户（如果有的话）
   def current_user
     @current_user ||= User.find_by(id: session[:user_id])
@@ -36,9 +42,10 @@ module SessionsHelper
      !current_user.nil?
   end
 
-   # 退出当前用户
+  # 退出当前用户
   def log_out
-       session.delete(:user_id)
-       @current_user = nil
+    forget(current_user)
+    session.delete(:user_id)
+    @current_user = nil
   end
 end
