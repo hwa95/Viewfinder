@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+gem 'faker',                   '1.7.3'
+gem 'nokogiri',                '1.8.1'
+gem 'will_paginate',           '3.1.6'
+
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
