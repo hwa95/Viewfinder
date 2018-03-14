@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   #get 'users/new'
 
   get 'static_pages/home'
-
+  get 'static_pages/parks', to: 'static_pages#parks', as: "parks"
   get 'static_pages/help'
 
   resources :users
