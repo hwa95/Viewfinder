@@ -1,0 +1,40 @@
+<p>
+	<strong>PARK_NAME:</strong>
+	<%= @park.PARK_NAME %>
+</p>
+
+<p>
+	<strong>LATITUDE:</strong>
+	<%= @park.LATITUDE %>
+</p>
+
+<p>
+	<strong>LONGITUDE:</strong>
+	<%= @park.LONGITUDE %>
+</p>
+
+<p>
+	<strong>ADDRESS:</strong>
+	<%= @park.ADDRESS %>
+</p>
+
+<p>
+	<strong>URL:</strong>
+	<%= @park.URL %>
+</p>
+
+
+
+<h2>ParkComments</h2>
+<%= render @park.park_comments %>
+
+<h2>Add a park comment:</h2>
+<%= render 'park_comments/form' %>>
+
+
+
+
+
+
+<%= link_to 'Edit', edit_park_path(@park) %> |
+<%= link_to 'Back', parks_path %>

@@ -1,0 +1,14 @@
+
+<%= form_with(model: [ @park, @park.park_comments.build ]) do |form| %>
+  <p>
+    <%= form.label :parkCommenter %><br>
+    <%= form.text_field :parkCommenter %>
+  </p>
+  <p>
+    <%= form.label :body %><br>
+    <%= form.text_area :body %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

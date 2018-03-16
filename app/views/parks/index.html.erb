@@ -1,0 +1,29 @@
+
+<h1>Listing Parks</h1>
+
+<%= link_to 'New Park', new_park_path %>
+
+<table>
+  <tr>
+    <th>PARK_NAME: &nbsp </th>
+    <th>LATITUDE: &nbsp </th>
+    <th>LONGITUDE: &nbsp </th>
+    <th>ADDRESS: &nbsp </th>
+    <th>URL: &nbsp </th>
+    <th colspan="10"></th>
+  </tr>
+
+  <% @parks.each do |park| %>
+    <tr>
+      <td><%= park.PARK_NAME %></td>
+      <td><%= park.LATITUDE %></td>
+      <td><%= park.LONGITUDE %></td>
+      <td><%= park.ADDRESS %></td>
+      <td><%= park.URL %></td>
+      <th colspan="10"></th>
+      <td><%= link_to 'Show', park_path(park) %></td>
+      <td><%= link_to 'Edit', edit_park_path(park) %></td>
+      <td><%= link_to 'Destroy', park_path(park), method: :delete, data: {confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>
