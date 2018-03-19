@@ -1,6 +1,6 @@
 
 <p>
-  <strong>parkCommenter:</strong>
+  <strong>Comment Title:</strong>
   <%= park_comment.parkCommenter %>
 </p>
 
@@ -10,7 +10,7 @@
 </p>
 
 <p>
-  <%= link_to 'Destroy Comment', [park_comment.park, parkComment],
+  <%= link_to 'Destroy Comment', [park_comment.park, park_comment],
                method: :delete,
                data: { confirm: 'Are you sure?' } %>
 </p>

@@ -5,12 +5,12 @@
 
 <table>
   <tr>
-    <th>PARK_NAME: &nbsp </th>
-    <th>LATITUDE: &nbsp </th>
-    <th>LONGITUDE: &nbsp </th>
-    <th>ADDRESS: &nbsp </th>
-    <th>URL: &nbsp </th>
-    <th colspan="10"></th>
+    <th>PARK_NAME:&nbsp </th>
+    <th>LATITUDE:&nbsp </th>
+    <th>LONGITUDE:&nbsp </th>
+    <th>ADDRESS:&nbsp </th>
+    <th>URL:&nbsp </th>
+    <th colspan="20"></th>
   </tr>
 
   <% @parks.each do |park| %>
@@ -20,7 +20,15 @@
       <td><%= park.LONGITUDE %></td>
       <td><%= park.ADDRESS %></td>
       <td><%= park.URL %></td>
-      <th colspan="10"></th>
+      <!--<th colspan="10"></th> -->
+      <colgroup>
+       <col span="1" style="width: 15%;">
+       <col span="1" style="width: 15%;">
+       <col span="1" style="width: 15%;">
+       <col span="1" style="width: 15%;">
+       <col span="1" style="width: 15%;"> 
+      </colgroup>
+
       <td><%= link_to 'Show', park_path(park) %></td>
       <td><%= link_to 'Edit', edit_park_path(park) %></td>
       <td><%= link_to 'Destroy', park_path(park), method: :delete, data: {confirm: 'Are you sure?' } %></td>

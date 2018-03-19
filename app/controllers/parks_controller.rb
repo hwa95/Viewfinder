@@ -21,6 +21,7 @@ class ParksController < ApplicationController
       @park = Park.new(park_params)
 
       if @park.save
+
         redirect_to @park
       else
         render 'new'

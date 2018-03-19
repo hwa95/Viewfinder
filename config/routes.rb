@@ -27,6 +27,8 @@ Rails.application.routes.draw do
   #park GET    /parks/:id(.:format)      parks#show
 
 
+
+
   #root 'welcome#index'
   root 'static_pages#home'
   get  '/help',    to: 'static_pages#help'
