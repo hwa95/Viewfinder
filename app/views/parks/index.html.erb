@@ -5,28 +5,31 @@
 
 <table>
   <tr>
-    <th>PARK_NAME:&nbsp </th>
-    <th>LATITUDE:&nbsp </th>
-    <th>LONGITUDE:&nbsp </th>
-    <th>ADDRESS:&nbsp </th>
-    <th>URL:&nbsp </th>
+    <th>Park_Name:&nbsp </th>
+    <th>Latitude:&nbsp </th>
+    <th>Longitude:&nbsp </th>
+    <th>Address:&nbsp </th>
+    <th>Information:&nbsp </th>
+    <th>Safety_And_Cleanliness:&nbsp </th>
     <th colspan="20"></th>
   </tr>
 
   <% @parks.each do |park| %>
     <tr>
-      <td><%= park.PARK_NAME %></td>
-      <td><%= park.LATITUDE %></td>
-      <td><%= park.LONGITUDE %></td>
-      <td><%= park.ADDRESS %></td>
-      <td><%= park.URL %></td>
+      <td><%= park.park_name %></td>
+      <td><%= park.latitude %></td>
+      <td><%= park.longitude %></td>
+      <td><%= park.address %></td>
+      <td><%= park.general_information %></td>
+      <td><%= park.safety_and_cleanliness %></td>
       <!--<th colspan="10"></th> -->
       <colgroup>
        <col span="1" style="width: 15%;">
        <col span="1" style="width: 15%;">
        <col span="1" style="width: 15%;">
        <col span="1" style="width: 15%;">
-       <col span="1" style="width: 15%;"> 
+       <col span="1" style="width: 15%;">
+       <col span="1" style="width: 15%;">
       </colgroup>
 
       <td><%= link_to 'Show', park_path(park) %></td>

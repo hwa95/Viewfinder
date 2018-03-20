@@ -1,29 +1,33 @@
 <%= form_with model: @park, local: true do |form| %>
 
-
   <p>
-    <%= form.label :PARK_NAME %><br>
-    <%= form.text_field :PARK_NAME %>
+    <%= form.label :park_name %><br>
+    <%= form.text_field :park_name %>
   </p>
 
   <p>
-    <%= form.label :LATITUDE %><br>
-    <%= form.text_field :LATITUDE %>
+    <%= form.label :latitude %><br>
+    <%= form.text_field :latitude %>
   </p>
 
   <p>
-    <%= form.label :LONGITUDE %><br>
-    <%= form.text_field :LONGITUDE %>
+    <%= form.label :longitude %><br>
+    <%= form.text_field :longitude %>
   </p>
 
   <p>
-    <%= form.label :ADDRESS %><br>
-    <%= form.text_field :ADDRESS %>
+    <%= form.label :address %><br>
+    <%= form.text_field :address %>
   </p>
 
   <p>
-    <%= form.label :URL %><br>
-    <%= form.text_field :URL %>
+    <%= form.label :general_information %><br>
+    <%= form.text_field :general_information %>
+  </p>
+
+  <p>
+    <%= form.label :safety_and_cleanliness %><br>
+    <%= form.text_field :safety_and_cleanliness %>
   </p>
 
   <p>

@@ -1,34 +1,22 @@
 <p>
 	<strong><big>Park:</big></strong>
-	<%= @park.PARK_NAME %>
-</p>
-<!--
-<p>
-	<strong>LATITUDE:</strong>
-	<%= @park.LATITUDE %>
+	<%= @park.park_name %>
 </p>
 
 <p>
-	<strong>LONGITUDE:</strong>
-	<%= @park.LONGITUDE %>
+	<strong>Address:</strong>
+	<%= @park.address %>
 </p>
 
 <p>
-	<strong>ADDRESS:</strong>
-	<%= @park.ADDRESS %>
+	<strong>Park Information:</strong>
+	<%= @park.general_information %>
 </p>
 
 <p>
-	<strong>URL:</strong>
-	<%= @park.URL %>
+	<strong>Saftey and Cleanliness:</strong>
+	<%= @park.safety_and_cleanliness %>
 </p>
--->
-<p>
-	<strong>url:</strong>
-	<%= @park.URL %>
-	<!--<h><%= link_to @park.URL, @park %></h> -->
-</p>
-
 
 <h2><big><strong> Park Comments</strong></big></h2>
 <%= render @park.park_comments %>

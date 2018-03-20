@@ -25,11 +25,12 @@ ActiveRecord::Schema.define(version: 20180314215042) do
   end
 
   create_table "parks", force: :cascade do |t|
-    t.string "PARK_NAME"
-    t.float "LATITUDE"
-    t.float "LONGITUDE"
-    t.string "ADDRESS"
-    t.string "URL"
+    t.string "park_name"
+    t.float "latitude"
+    t.float "longitude"
+    t.string "address"
+    t.text "general_information"
+    t.float "safety_and_cleanliness"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
