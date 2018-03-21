@@ -50,7 +50,7 @@ class UsersController < ApplicationController
   private
 
       def user_params
-        params.require(:user).permit(:name, :email, :admin, :remember_digest, :password_digest)
+        params.require(:user).permit(:name, :email, :password, :admin, :remember_digest, :password_digest)
       end
 
       # 前置过滤器
