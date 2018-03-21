@@ -1,22 +1,15 @@
 class UsersController < ApplicationController
-<<<<<<< HEAD
-
-  def show
-      @user = User.find(params[:id])
-    end
-=======
   before_action :logged_in_user, only: [:index, :edit, :update, :destroy]
   before_action :correct_user,   only: [:edit, :update]
   before_action :admin_user,     only: :destroy
-  
+
   def index
     @users = User.paginate(page: params[:page])
   end
-  
+
   def show
     @user = User.find(params[:id])
   end
->>>>>>> e51b8178381ae86a8d467ae5534a01e537f54683
 
   def new
     @user = User.new
@@ -47,7 +40,7 @@ class UsersController < ApplicationController
       render 'edit'
     end
   end
-  
+
   def destroy
       User.find(params[:id]).destroy
       flash[:success] = "User deleted"
@@ -57,12 +50,9 @@ class UsersController < ApplicationController
   private
 
       def user_params
-        params.require(:user).permit(:name, :email, admin:,remember_digest:,password_digest:)
+        params.require(:user).permit(:name, :email, :admin, :remember_digest, :password_digest)
       end
 
-<<<<<<< HEAD
-end
-=======
       # 前置过滤器
 
       # 确保用户已登录
@@ -73,17 +63,16 @@ end
       redirect_to login_url
     end
   end
-  
+
   # 确保是正确的用户
   def correct_user
     @user = User.find(params[:id])
     redirect_to(root_url) unless current_user?(@user)
   end
-  
+
   # 确保是管理员
   def admin_user
     redirect_to(root_url) unless current_user.admin?
   end
-  
+
 end
->>>>>>> e51b8178381ae86a8d467ae5534a01e537f54683
