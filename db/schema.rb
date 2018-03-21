@@ -15,20 +15,24 @@ ActiveRecord::Schema.define(version: 20180311074733) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "articles", force: :cascade do |t|
-    t.string "title"
-    t.text "text"
+  create_table "park_comments", force: :cascade do |t|
+    t.string "parkCommenter"
+    t.string "body"
+    t.bigint "park_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["park_id"], name: "index_park_comments_on_park_id"
   end
 
-  create_table "comments", force: :cascade do |t|
-    t.string "commenter"
-    t.text "body"
-    t.bigint "article_id"
+  create_table "parks", force: :cascade do |t|
+    t.string "park_name"
+    t.float "latitude"
+    t.float "longitude"
+    t.string "address"
+    t.text "general_information"
+    t.float "safety_and_cleanliness"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["article_id"], name: "index_comments_on_article_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -36,10 +40,12 @@ ActiveRecord::Schema.define(version: 20180311074733) do
     t.string "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "admin", default: false
+    t.string "remember_digest"
     t.string "password_digest"
     t.string "remember_digest"
     t.boolean "admin", default: false
   end
 
-  add_foreign_key "comments", "articles"
+  add_foreign_key "park_comments", "parks"
 end

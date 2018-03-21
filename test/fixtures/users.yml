@@ -4,13 +4,13 @@ michael:
   email: michael@example.com
   password_digest: <%= User.digest('password') %>
   admin: true
-  
-  
+
+
 archer:
   name: Sterling Archer
   email: duchess@example.gov
   password_digest: <%= User.digest('password') %>
-  
+
 lana:
   name: Lana Kane
   email: hands@example.gov
@@ -27,3 +27,13 @@ user_<%= n %>:
   email: <%= "user-#{n}@example.com" %>
   password_digest: <%= User.digest('password') %>
 <% end %>
+
+# This model initially had no columns defined. If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+one: {}
+# column: value
+#
+two: {}
+# column: value

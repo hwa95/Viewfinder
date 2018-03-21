@@ -1,0 +1,21 @@
+
+
+
+
+<p>
+  <strong>Comment Title:</strong>
+  <%= park_comment.parkCommenter %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= park_comment.body %>
+</p>
+
+
+
+<p>
+  <%= link_to 'Destroy Comment', [park_comment.park, park_comment],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+</p>

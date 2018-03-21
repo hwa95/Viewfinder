@@ -5,16 +5,29 @@ Rails.application.routes.draw do
   #get 'users/new'
 
   get 'static_pages/home'
-  get 'static_pages/parks', to: 'static_pages#parks', as: "parks"
+
   get 'static_pages/help'
 
   resources :users
 
   get 'welcome/index'
+  #resources :articles do
+  #  resources :comments
+  #end
 
-  resources :articles do
-    resources :comments
+  #resources :parks
+  resources :parks do
+    resources :park_comments
   end
+  get 'parks/new'
+  #get 'parks/new'
+  post '/parks/new', to: 'parks#show'
+  #root 'welcome#index'
+
+  #park GET    /parks/:id(.:format)      parks#show
+
+
+
 
   #root 'welcome#index'
   root 'static_pages#home'
@@ -29,4 +42,3 @@ Rails.application.routes.draw do
   resources :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
-
