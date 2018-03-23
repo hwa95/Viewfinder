@@ -31,8 +31,13 @@
 <%= link_to 'Back', parks_path %>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <title>Geolocation</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Google Map</title>
     <style>
       #map {
         height: 400px;
@@ -44,17 +49,37 @@
     <h3>My Google Maps Demo</h3>
     <div id="map"></div>
     <script>
-      function initMap() {
-        var uluru = {lat: <%= @park.latitude%>,lng: <%= @park.longitude%>};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 10,
-          center: uluru
+	      function initMap() {
+					var parkLocation = {lat: <%= @park.latitude %>, lng: <%= @park.longitude %>};
+        	var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 9,
+          center: parkLocation
         });
         var marker = new google.maps.Marker({
-          position: uluru,
+          position: parkLocation,
           map: map
         });
-      }
+	        var infoWindow = new google.maps.InfoWindow({map: map});
+	        if (navigator.geolocation) {
+	          navigator.geolocation.getCurrentPosition(function(position) {
+	            var pos = {
+	              lat: position.coords.latitude,
+	              lng: position.coords.longitude
+	            };
+	            infoWindow.setPosition(pos);
+	            infoWindow.setContent('Your Location');
+	            map.setCenter(pos);
+	          }, function() {
+	            handleLocationError(true, infoWindow, map.getCenter());
+	          });
+	        }
+	      }
+	      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+	        infoWindow.setPosition(pos);
+	        infoWindow.setContent(browserHasGeolocation ?
+	                              'Error: can not find where u are!s' :
+	                              'Error: Your browser doesn\'t support geolocation.');
+	      }
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8fd4QdbBiYLZYAl8eptse7cNFImdIgjU&callback=initMap">
