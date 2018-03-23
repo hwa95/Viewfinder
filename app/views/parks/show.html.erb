@@ -18,22 +18,7 @@
 	<%= @park.safety_and_cleanliness %>
 </p>
 
-<h2><big><strong> Park Comments</strong></big></h2>
-<%= render @park.park_comments %>
-
-
-<h2>Add a park comment:</h2>
-<%= render 'park_comments/form' %>
-
-
-
-<%= link_to 'Edit', edit_park_path(@park) %> |
-<%= link_to 'Back', parks_path %>
-
-
-
-
-
+<%# Google Maps Integration %>
 <!DOCTYPE html>
 <html>
   <head>
@@ -45,18 +30,17 @@
     </style>
   </head>
   <body>
-    <h3>My Google Maps Demo</h3>
     <div id="map"></div>
 
     <script>
       function initMap() {
-        var uluru = {lat: <%= @park.latitude %>, lng: <%= @park.longitude %>};
+        var parkLocation = {lat: <%= @park.latitude %>, lng: <%= @park.longitude %>};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 10,
-          center: uluru
+          zoom: 15,
+          center: parkLocation
         });
         var marker = new google.maps.Marker({
-          position: uluru,
+          position: parkLocation,
           map: map
         });
       }
@@ -66,3 +50,13 @@
     </script>
   </body>
 </html>
+
+<h2><big><strong> Park Comments</strong></big></h2>
+<%= render @park.park_comments %>
+
+<h2 style="text-align:left">Add a park comment:</h2>
+<%= render 'park_comments/form' %>
+
+
+<%= link_to 'Edit', edit_park_path(@park) %> |
+<%= link_to 'Back', parks_path %>
