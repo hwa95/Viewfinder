@@ -53,16 +53,15 @@
 
 
 	      function initMap() {
-					var options = {
-						zoom:4,
-						center :{lat: 35.9452, lng: 120.1256}
-					}
-					var map = new google.maps.Map(document.getElementById('map'),options);
-
-					var marker = new google.maps.Marker({
-						position: {lat: 35.9452, lng: 120.1256},
-						map: map
-					});
+					var parkLocation = {lat: <%= @park.latitude %>, lng: <%= @park.longitude %>};
+        	var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: parkLocation
+        });
+        var marker = new google.maps.Marker({
+          position: parkLocation,
+          map: map
+        });
 	        var infoWindow = new google.maps.InfoWindow({map: map});
 
 
