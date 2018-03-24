@@ -22,12 +22,12 @@ CMPT276 - TEAM6
 <p>
   <b>User Stories:</b><br>
   We have two main types of users: signed in and unsignedup users, as well as an administative user.
-<%#
+<!---
   Unsigned up Users do not need to login to use the application. These users can access information, but cannot contribute ratings.<br>
   Signed in Users have an account and must login to obtain their privileges. They can make new ratings of parks or views.<br>
   Futhermore, we also have administrator users who can delete parks and users.
 </p>
-%>
+-->
 <ul>
   <li><b>Unsignedup User:</b> Do not need to sign up. Able to quickly find useful information about the quality of parks and views that are close and accessible.</li>
   <li><b>Signed In User:</b> Need to sign up, then signin to access further privileges.Able to easily and conveniently contribute ratings to parks and views in Vancouver as well as making microposts to their profile page.</li>
