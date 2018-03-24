@@ -12,11 +12,12 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
-
+gem 'carrierwave',             '1.2.2'
+gem 'mini_magick',             '4.7.0'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'jquery-rails'
 # Use PostgreSQL as the database for Active Record
-gem 'pg', '~> 0.11'
+gem 'pg', '0.20.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -65,7 +66,8 @@ group :test do
 end
 
 group :production do
-  gem 'pg', '~> 0.11'
+  gem 'pg', '0.20.0'
+  gem 'fog', '1.42'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
