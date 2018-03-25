@@ -1,9 +1,12 @@
-<%= @user.name %>, <%= @user.email %>
+<h3 style="text-align:left"> Welcome back, <%= @user.name %> </h3>
+<h2 style="text-align:left"> Email: <%= @user.email %></h2>
 
+<!---
 <h1>
   <%= gravatar_for @user %>
   <%= @user.name %>
 </h1>
+-->
 
 <% provide(:title, @user.name) %>
 <div class="row">
@@ -17,7 +20,7 @@
   </aside>
   <div class="col-md-8">
     <% if @user.microposts.any? %>
-      <h3>Microposts (<%= @user.microposts.count %>)</h3>
+      <h3>Your microposts (<%= @user.microposts.count %>)</h3>
       <ol class="microposts">
         <%= render @microposts %>
       </ol>
