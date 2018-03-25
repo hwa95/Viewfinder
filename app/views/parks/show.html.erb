@@ -18,18 +18,7 @@
 	<%= @park.safety_and_cleanliness %>
 </p>
 
-<h2><big><strong> Park Comments</strong></big></h2>
-<%= render @park.park_comments %>
-
-
-<h2>Add a park comment:</h2>
-<%= render 'park_comments/form' %>
-
-
-
-<%= link_to 'Edit', edit_park_path(@park) %> |
-<%= link_to 'Back', parks_path %>
-
+<!--- Google Maps Integration with User Location Added -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -46,16 +35,12 @@
     </style>
   </head>
   <body>
-    <h3>My Google Maps Demo</h3>
     <div id="map"></div>
     <script>
-
-
-
 	      function initMap() {
 					var parkLocation = {lat: <%= @park.latitude %>, lng: <%= @park.longitude %>};
         	var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 9,
+          zoom: 12,
           center: parkLocation
         });
         var marker = new google.maps.Marker({
@@ -84,7 +69,7 @@
 	      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
 	        infoWindow.setPosition(pos);
 	        infoWindow.setContent(browserHasGeolocation ?
-	                              'Error: can not find where u are!s' :
+	                              'Error: Cannot find where you are!' :
 	                              'Error: Your browser doesn\'t support geolocation.');
 	      }
     </script>
@@ -93,3 +78,13 @@
     </script>
   </body>
 </html>
+
+<h2><big><strong> Park Comments</strong></big></h2>
+<%= render @park.park_comments %>
+
+<h2 style="text-align:left">Add a park comment:</h2>
+<%= render 'park_comments/form' %>
+
+
+<%= link_to 'Edit', edit_park_path(@park) %> |
+<%= link_to 'Back', parks_path %>
