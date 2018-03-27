@@ -57,19 +57,29 @@
         </script>
       </td>
 
+      <td>
+        <%= link_to 'Show', park_path(park) %> 
+        <%= link_to 'Edit', edit_park_path(park) %><br>
+        <%= link_to 'Destroy', park_path(park), method: :delete, data: {confirm: 'Are you sure?' } %>
+      </td>
+
       <!--<th colspan="10"></th> -->
       <colgroup>
        <col span="1" style="width: 10%;">
        <col span="1" style="width: 10%;">
        <col span="1" style="width: 10%;">
        <col span="1" style="width: 15%;">
-       <col span="1" style="width: 15%;">
+       <col span="1" style="width: 10%;">
        <col span="1" style="width: 35%;">
       </colgroup>
 
+
+<!---
       <td><%= link_to 'Show', park_path(park) %></td>
       <td><%= link_to 'Edit', edit_park_path(park) %></td>
       <td><%= link_to 'Destroy', park_path(park), method: :delete, data: {confirm: 'Are you sure?' } %></td>
+-->
     </tr>
+    <tr></tr>
   <% end %>
 </table>
