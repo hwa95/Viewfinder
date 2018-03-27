@@ -39,26 +39,23 @@
               newInfo = newInfo + "<b>...</b>";
               return newInfo;
               }
-            }
-            var i = 0;
-            var prefix = "parkID";
-            var newID = "parkID";
-            while (document.getElementById(newID) != null){
-              newID = prefix + i;
-              i++;
-            }
-            var change = document.getElementById('parkID');
-            change.id = newID;
-
-          //var list = document.getElementsByClassName("test");
-          //list.getElementsByClassName("test")[1].innerHTML = shorten(parkInformation);
+          }
+          var i = 0;
+          var prefix = "parkID";
+          var newID = "parkID";
+          while (document.getElementById(newID) != null){
+            newID = prefix + i;
+            i++;
+          }
+          var change = document.getElementById('parkID');
+          change.id = newID;
           //document.write(shorten(parkInformation));
           document.getElementById(newID).innerHTML = shorten(parkInformation);
         </script>
       </td>
 
       <td>
-        <%= link_to 'Show', park_path(park) %> 
+        <%= link_to 'Show', park_path(park) %>
         <%= link_to 'Edit', edit_park_path(park) %><br>
         <%= link_to 'Destroy', park_path(park), method: :delete, data: {confirm: 'Are you sure?' } %>
       </td>
@@ -73,13 +70,11 @@
        <col span="1" style="width: 35%;">
       </colgroup>
 
-
 <!---
       <td><%= link_to 'Show', park_path(park) %></td>
       <td><%= link_to 'Edit', edit_park_path(park) %></td>
       <td><%= link_to 'Destroy', park_path(park), method: :delete, data: {confirm: 'Are you sure?' } %></td>
 -->
     </tr>
-    <tr></tr>
   <% end %>
 </table>
