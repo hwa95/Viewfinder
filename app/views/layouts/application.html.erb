@@ -19,7 +19,8 @@
 		<% end %>
       <%= yield %>
       <%= render 'layouts/footer' %>
-	  <%= debug(params) if Rails.env.development? %>
+  <!--- Below commented line should be the debug box that appeared at the bottom of every page -->
+	 <!---  <%= debug(params) if Rails.env.development? %> -->
     </div>
   </body>
 </html>

@@ -8,9 +8,9 @@
     <th>Park Name&nbsp </th>
     <th>Latitude&nbsp </th>
     <th>Longitude&nbsp </th>
-    <th>Address&nbsp </th>
+    <th>Address</th>
+    <th>Safety and Cleanliness&nbsp &nbsp</th>
     <th>Information&nbsp </th>
-    <th>&nbsp Safety and Cleanliness&nbsp </th>
     <th colspan="20"></th>
   </tr>
 
@@ -20,16 +20,51 @@
       <td><%= park.latitude %></td>
       <td><%= park.longitude %></td>
       <td><%= park.address %></td>
-      <td><%= park.general_information %></td>
       <td><%= park.safety_and_cleanliness %></td>
+      <!---<td><%= park.general_information%></td>-->
+      <td>
+        <p id="parkID"></p>
+        <script type="text/javascript">
+          var parkInformation = "<%=park.general_information%>"
+          function shorten(information){
+            if(information.length < 150){
+            //  information.charAt(5);
+              return information;
+            }
+            else{
+              var newInfo = "", i;
+              for (i=0; i<110; i++){
+                newInfo = newInfo + information.charAt(i);
+              }
+              newInfo = newInfo + "<b>...</b>";
+              return newInfo;
+              }
+            }
+            var i = 0;
+            var prefix = "parkID";
+            var newID = "parkID";
+            while (document.getElementById(newID) != null){
+              newID = prefix + i;
+              i++;
+            }
+            var change = document.getElementById('parkID');
+            change.id = newID;
+
+          //var list = document.getElementsByClassName("test");
+          //list.getElementsByClassName("test")[1].innerHTML = shorten(parkInformation);
+          //document.write(shorten(parkInformation));
+          document.getElementById(newID).innerHTML = shorten(parkInformation);
+        </script>
+      </td>
+
       <!--<th colspan="10"></th> -->
       <colgroup>
        <col span="1" style="width: 10%;">
        <col span="1" style="width: 10%;">
        <col span="1" style="width: 10%;">
        <col span="1" style="width: 15%;">
-       <col span="1" style="width: 35%;">
        <col span="1" style="width: 15%;">
+       <col span="1" style="width: 35%;">
       </colgroup>
 
       <td><%= link_to 'Show', park_path(park) %></td>

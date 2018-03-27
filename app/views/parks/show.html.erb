@@ -1,22 +1,22 @@
 <p>
+	<!---
 	<strong><big>Park:</big></strong>
-	<%= @park.park_name %>
+-->
+	<h3><big><b><u><%= @park.park_name %></b></u></big></h3>
 </p>
 
 <p>
 	<strong>Address:</strong>
 	<%= @park.address %>
+<br>
+	<strong>Saftey and Cleanliness:</strong>
+	<%= @park.safety_and_cleanliness %> / 5
 </p>
-
 <p>
 	<strong>Park Information:</strong>
 	<%= @park.general_information %>
 </p>
 
-<p>
-	<strong>Saftey and Cleanliness:</strong>
-	<%= @park.safety_and_cleanliness %>
-</p>
 
 <!--- Google Maps Integration with User Location Added -->
 <!DOCTYPE html>
@@ -40,7 +40,7 @@
 	      function initMap() {
 					var parkLocation = {lat: <%= @park.latitude %>, lng: <%= @park.longitude %>};
         	var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 12,
+          zoom: 13,
           center: parkLocation
         });
         var marker = new google.maps.Marker({

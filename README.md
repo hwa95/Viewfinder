@@ -1,9 +1,5 @@
-Viewfinder
-
-CMPT276 - TEAM6
-
 <p>
-  <b>Project Name: Viewfinder</b><br>
+  <h1>Project Name: Viewfinder</h1><br>
   Requirements and Specification Document <i>v.2018 Mar. 23rd</i>
 </p>
 <p>
