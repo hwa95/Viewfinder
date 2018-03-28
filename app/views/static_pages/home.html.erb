@@ -14,7 +14,15 @@
       <%= render 'shared/feed' %>
     </div>
   </div>
+
 <% else %>
+<!---
+<html>
+<body background = "national-parks.jpg">
+</body>
+</html>
+-->
+
 <div class="center jumbotron">
   <h1>Welcome to ViewFinder!</h1>
 
@@ -24,7 +32,7 @@
 
   <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
 
-  <%= link_to "Find a park", parks_path, class: "btn btn-lg" %>
+  <!---<%= link_to "Find a park", parks_path, class: "btn btn-lg" %> -->
 
 </div>
 
