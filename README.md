@@ -6,7 +6,7 @@
 <p>
   <b>Setup Instructions</b><br>
   Ruby Version: 2.5.0 <br>
-  Rails Version: 5.1. <br>
+  Rails Version: 5.1.4 <br>
   PostgreSQL Version: 9.6.8 <br>
   Start by cloning the repository with the following command in the desired folder: <br>
   <i>$ git clone https://github.com/hwa95/Viewfinder.git</i><br>
