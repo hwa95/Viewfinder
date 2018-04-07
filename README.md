@@ -105,5 +105,24 @@ The Applications Utility Viewfinder will greatly reduce the required time in fin
 
 Scope and Responsibilities The amount of work required for this project is appropriate for CMPT 276. Our team will have to program a model view controller interface, develop a user login, understand and employ HTTP methods for RESTful services, set up a server side database with ruby on rails, find and scrape some database with Vancouver Park information, add to this scraped database, develop unit testing and possibly integration testing, understand and use byebug, prepare a presentation, and learn to develop with a git repository. The tools required to build this application are new to all of us.
 
+Setup Instructions:
+Ruby Version: 2.5.0
+Rails Version: 5.1.
+PostgreSQL Version: 9.6.8
+Start by cloning the repository with the following command in the desired folder:
+$ git clone https://github.com/hwa95/Viewfinder.git
+Then in the “Viewfinder” folder, enter the following commands:
+$ rails bundle install
+$ rails db:create(for the first time)
+$ rails db:migrate
+$ rails db:seed
+$ rails server
+The application should now be running on “localhost:3000” .
+If you are receiving an error related to the database (db), close the server by pressing “Ctrl + C” on the terminal it’s running in. Then, run the following two commands one after the other before starting the server back up again.
+$ rails db:reset
+$ rails db:migrate
+If any further help with the application is required, there is a help page which one can access by pressing “Help” in the bottom right-hand corner of any page of the website.
+
+
 Git Link: https://github.com/hwa95/Viewfinder
 -->
