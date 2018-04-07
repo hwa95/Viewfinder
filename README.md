@@ -1,6 +1,31 @@
 <p>
   <h1>Project Name: Viewfinder</h1><br>
-  Requirements and Specification Document <i>v.2018 Mar. 23rd</i>
+  Requirements and Specification Document <i>v.2018 Apr. 6th</i>
+</p>
+
+<p>
+  <b>Setup Instructions</b><br>
+  Ruby Version: 2.5.0 <br>
+  Rails Version: 5.1. <br>
+  PostgreSQL Version: 9.6.8 <br>
+  Start by cloning the repository with the following command in the desired folder: <br>
+  <i>$ git clone https://github.com/hwa95/Viewfinder.git</i><br>
+  Then in the “Viewfinder” folder, enter the following commands:<br>
+  <i>
+  $ rails bundle install <br>
+  $ rails db:create(for the first time) <br>
+  $ rails db:migrate <br>
+  $ rails db:seed <br>
+  $ rails server <br>
+  </i>
+  The application should now be running on “localhost:3000” .<br>
+  If you are receiving an error related to the database (db), close the server by pressing “Ctrl + C” on the
+  terminal it’s running in. Then, run the following two commands one after the other before starting the server back up again.
+  <i>
+  $ rails db:reset <br>
+  $ rails db:migrate <br>
+  </i>
+  If any further help with the application is required, there is a help page which one can access by pressing "Help" in the bottom right-hand corner of any page of the website.
 </p>
 <p>
   <b>Project Abstract:</b><br>
