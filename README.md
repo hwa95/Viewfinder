@@ -29,7 +29,7 @@
 </p>
 <p>
   <b>Project Abstract:</b><br>
-  Viewfinder is a web application for tourists, hikers, or just locals looking for a place to walk their dog. The application will provide information regarding parks and scenic views in Vancouver. Viewfinder will allow users to find a desirable park or view without undue hassle. Without an application, one would need to personally visit parks and collect their own data. Furthermore, our application will include information on which parks are safe to visit. The application will also include interaction with the google maps API, <u>photos of individual locations,</u> and general information about the particular park or view.
+  Viewfinder is a web application for tourists, hikers, or just locals to look for a place to walk their dog. The application will provide information regarding parks and scenic views in Vancouver. Viewfinder will allow users to find a desirable park or view without undue hassle. Without an application, one would need to personally visit parks and collect their own data. Our application will include information on which parks are safe to visit. The application will also include interaction with the google maps API, photos of individual locations, and general information about the particular park or view.
 </p>
 <p>
   <b>Customers:</b><br>
@@ -37,7 +37,7 @@
 </p>
 <p>
   <b>Competitive Analysis:</b><br>
-  While park finding client-server applications do currently exist. These applications fail to provide information regarding the safety and cleanliness parks. Our application includes features that provide this information, along with the features that the competing applications provide such as <u>a distance filer, a rating system, interaction with the google maps API, photos, and general information about the particular park or view.</u>
+  Existing park finding client-server applications fail to provide information regarding the safety and cleanliness parks. Our application includes features that provide this information, along with features as the competing applications provide such as a distance filer, a rating system, interaction with the google maps API, photos, and general information about a particular park or view.
 </p>
 
 <p>
@@ -62,17 +62,17 @@
 
 <p>
   <b>Application Features:</b><br>
-  <u>  Viewfinder allows you to find out about the safety and cleanliness of the parks. Our application will include features that provide this information, along with the features that the competing applications provide such as a distance filer, a rating system, interaction with the google maps API, photos, and general information about the particular park or view.</u>
+  <u>  Viewfinder allows users to search about the safety and cleanliness of the parks. The application also includes the features that the competing applications provide such as a distance filer, a rating system, interaction with the google maps API, photos, and general information about the particular park or view.</u>
 </p>
 
 <p>
   <b>Application Utility:</b><br>
-  Viewfinder will greatly reduce the required time in finding a desirable park. Without it, one would need to personally visit parks and collect their own data. Our application will allow users to only visit the best parks, immediately, without experimenting with undesirable locations. Futhermore, our application will also keep users safe by providing information on which parks are safe to visit which is especially pertinent to users that plan on taking children.
+  Viewfinder will greatly reduce the required time in finding a desirable park. The efforts of personally visiting parks and collecting their own data is saved. Our application will allow users to only visit the best parks immediately. Our application will also keep users safe by providing information on which parks are safe to visit which is especially pertinent to users that plan on taking children.
 </p>
 
 <p>
   <b>Scope and Responsibilities:</b><br>
-   The amount of work required for this project is appropriate for CMPT 276. Our team will have to program a model view controller interface, develop a user login, understand and employ HTTP methods for RESTful services. Furthermore we need to set up a server side database with ruby on rails, find and scrape some database with Vancouver Park information, then add to this scraped database, develop unit testing and possibly integration testing, understand and use byebug, prepare a presentation, and learn to develop with a git repository. The tools required to build this application are new to all of us.
+   The amount of work required for this project is appropriate for CMPT 276. Our team will have to program a model view controller interface, develop a user login, understand and employ HTTP methods for RESTful services. A server side database with ruby on rails is needed. Some database with Vancouver Park information needs to be developed. We also need to add to this scraped database, develop unit testing and possibly integration testing, understand and use byebug, prepare a presentation, and learn to develop with a git repository. The tools required to build this application are new to all of us.
 </p>
 
 <!--- ****************************************************************** -->
