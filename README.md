@@ -18,46 +18,43 @@
   $ rails db:seed <br>
   $ rails server <br>
   </i>
-  The application should now be running on “localhost:3000” .<br>
+  The application should run on “localhost:3000” .<br>
   If you are receiving an error related to the database (db), close the server by pressing “Ctrl + C” on the
-  terminal it’s running in. Then, run the following two commands one after the other before starting the server back up again.
+  terminal. Then, run the following two commands one after the other before starting the server back up again.
   <i>
   $ rails db:reset <br>
   $ rails db:migrate <br>
   </i>
-  If any further help with the application is required, there is a help page which one can access by pressing "Help" in the bottom right-hand corner of any page of the website.
+  If you need additional help, there is a help page which you can access by pressing "Help" in the bottom right-hand corner of any page of the website.
 </p>
 <p>
-  <b>Project Abstract:</b><br>
-  Viewfinder is a web application for tourists, hikers, or just locals to look for a place to walk their dog. The application will provide information regarding parks and scenic views in Vancouver. Viewfinder will allow users to find a desirable park or view without undue hassle. Without an application, one would need to personally visit parks and collect their own data. Our application will include information on which parks are safe to visit. The application will also include interaction with the google maps API, photos of individual locations, and general information about the particular park or view.
+  <b>Abstract:</b><br>
+  Viewfinder is a web application for tourists, hikers, or someone who are looking for a place to walk their dog. The application will provide information regarding to parks and scenic views in Vancouver. Viewfinder will allow users to find a desirable park or view without undue hassle. Without an application, one would need to personally visit parks and collect their own data. Our application will include information on which parks are safe to visit. The application will also provide direction, photos of individual locations, and general information about the particular park or view.
 </p>
 <p>
-  <b>Customers:</b><br>
-  Viewfinder is a web application for tourists, hikers, locals looking for a place to walk their dog, or anyone in Vancouver interested in visiting a park or seeing a view.
-</p>
 <p>
   <b>Competitive Analysis:</b><br>
-  Existing park finding client-server applications fail to provide information regarding the safety and cleanliness parks. Our application includes features that provide this information, along with features as the competing applications provide such as a distance filer, a rating system, interaction with the google maps API, photos, and general information about a particular park or view.
+  Existing park finding applications fail to provide information regarding the safety and cleanliness parks. Our application includes features that provide this information, along with features as the competing applications provide such as a distance filer, a rating system, direction, photos, and general information about a particular park or view.
 </p>
 
 <p>
   <b>User Stories:</b><br>
-  We have two main types of users: signed in and unsignedup users, as well as an administative user.
+  We have two types of users: Regular user and administative user.
 <!---
-  Unsigned up Users do not need to login to use the application. These users can access information, but cannot contribute ratings.<br>
-  Signed in Users have an account and must login to obtain their privileges. They can make new ratings of parks or views.<br>
-  Futhermore, we also have administrator users who can delete parks and users.
+  Users do not need to login to use the application. These users can access information, but cannot contribute ratings.<br>
+  A signed in user can make new ratings of parks or views.<br>
+  Administrator users can delete parks and users.
 </p>
 -->
 <ul>
-  <li><b>Unsignedup User:</b> Do not need to sign up. Able to quickly find useful information about the quality of parks and views that are close and accessible.</li>
-  <li><b>Signed In User:</b> Need to sign up, then signin to access further privileges. Able to easily and conveniently contribute ratings to parks and views in Vancouver as well as making microposts to their profile page.</li>
+  <li><b>Unsignedup User:</b>Able to quickly find useful information about the quality of parks and views that are close and accessible.</li>
+  <li><b>Signed In User:</b>Able to easily and conveniently contribute ratings to parks and views in Vancouver as well as making microposts to their profile page.</li>
   <li><b>Administrator:</b> Have permission to delete parks and users.</li>
 </ul>
 
 <p>
   <b>Target Audience</b><br>
-  Viewfinder is a web application for tourists, hikers, locals looking for a place to walk their dog, or anyone in Vancouver interested in visiting a park or seeing a view.
+  Tourists, hikers, someone who are looking for a place to walk with their dog, or anyone in Vancouver interested in visiting a park or seeing a view.
 </p>
 
 <p>
@@ -67,7 +64,7 @@
 
 <p>
   <b>Application Utility:</b><br>
-  Viewfinder will greatly reduce the required time in finding a desirable park. The efforts of personally visiting parks and collecting their own data is saved. Our application will allow users to only visit the best parks immediately. Our application will also keep users safe by providing information on which parks are safe to visit which is especially pertinent to users that plan on taking children.
+  Viewfinder reduce the required time in finding a desirable park. The efforts of personally visiting parks and collecting their own data is saved. Our application will allow users to only visit the best parks immediately. Our application will also keep users safe by providing information on which parks are safe to visit which is especially important to users that plan on taking children.
 </p>
 
 <p>
