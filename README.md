@@ -72,7 +72,7 @@
 
 <p>
   <b>Scope and Responsibilities:</b><br>
-   The amount of work required for this project is appropriate for CMPT 276. Our team will have to program a model view controller interface, develop a user login, understand and employ HTTP methods for RESTful services. A server side database with ruby on rails is needed. Some database with Vancouver Park information needs to be developed. We also need to add to this scraped database, develop unit testing and possibly integration testing, understand and use byebug, prepare a presentation, and learn to develop with a git repository. The tools required to build this application are new to all of us.
+   The amount of work required for this project is appropriate for CMPT 276. Our team will have to program a model view controller interface, develop a user login, understand and employ HTTP methods for RESTful services. A server side database with ruby on rails and Vancouver Park information database are needed. We also need to add to this scraped database, develop unit testing and possibly integration testing, understand and use byebug, prepare a presentation, and learn to develop with a git repository. The tools required to build this application are new to all of us.
 </p>
 
 <!--- ****************************************************************** -->
