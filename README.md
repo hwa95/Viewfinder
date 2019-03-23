@@ -54,7 +54,7 @@
 
 <p>
   <b>Target Audience</b><br>
-  Tourists, hikers, someone who are looking for a place to walk with their dog, or anyone in Vancouver interested in visiting a park or seeing a view.
+  Tourists, hikers and someone who are looking for a place to walk with their dog.
 </p>
 
 <p>
@@ -64,7 +64,7 @@
 
 <p>
   <b>Application Utility:</b><br>
-  Viewfinder reduce the required time in finding a desirable park. The efforts of personally visiting parks and collecting their own data is saved. Our application will allow users to only visit the best parks immediately. Our application will also keep users safe by providing information on which parks are safe to visit which is especially important to users that plan on taking children.
+  Viewfinder reduces the required time in finding a desirable park. The efforts of personally visiting parks and collecting their own data are saved. Our application will allow users to only visit the best parks immediately. Our application will also keep users safe by providing information on park safety which is especially important to users with a child.
 </p>
 
 <p>
