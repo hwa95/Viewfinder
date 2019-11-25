@@ -78,7 +78,7 @@
 <!---
 Document Header Project Name: Viewfinder Requirements and Specification Document 01/31/2018
 
-Project Abstract Viewfinder is a web application for tourists, hikers, or locals looking for a place to walk their dog. The application will provide information regarding parks and scenic views in Vancouver. Users will be able to filter the list by location, rating, and type. Viewfinder will greatly reduce the required time in finding a desirable park or view. Without an application, a person would need to personally visit parks and collect his/her own data. Furthermore, our application will include information on which parks are safe to visit. The application will also include interaction with the google maps API, photos of individual locations, and general information about the particular park or view.
+Project Abstract Viewfinder is a web application for users who are tourists, hikers, or looking for a place to walk dogs. The application will provide information regarding parks and scenic views in Vancouver. Users will be able to filter the list by location, rating, and type. Viewfinder will greatly reduce the time in finding a desirable park or view without visiting parks or collect his/her own data. Furthermore, our application will include information on whether a park is safe to visit, the interaction with the google maps API, photos of individual locations, and general information about the particular park or view.
 
 Customer Viewfinder is a web application for tourists, hikers, locals looking for a place to walk their dog, or anyone in Vancouver interested in visiting a park or seeing a view.
 
